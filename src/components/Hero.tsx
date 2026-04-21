@@ -1,0 +1,82 @@
+import { ChevronDown } from 'lucide-react';
+
+export default function Hero() {
+  return (
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            'url(https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+        }}
+      />
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-stone-950/80 via-stone-900/70 to-stone-950/90" />
+
+      {/* Decorative warm glow */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-amber-900/30 via-transparent to-transparent" />
+
+      {/* Content */}
+      <div className="relative z-10 text-center px-4 sm:px-8 max-w-5xl mx-auto">
+        <div className="animate-fade-in">
+          <span className="inline-block bg-amber-500/20 border border-amber-500/40 text-amber-300 text-sm font-medium px-5 py-2 rounded-full mb-6 tracking-wide">
+            הרצאות השראה ומוטיבציה
+          </span>
+        </div>
+
+        <h1 className="animate-fade-in-up delay-100 text-shadow-lg text-white font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6">
+          <span className="block">עמי-חי</span>
+          <span className="gradient-text block mt-1">סיפורה של בחירה</span>
+        </h1>
+
+        <p className="animate-fade-in-up delay-300 text-shadow text-stone-200 text-lg sm:text-xl md:text-2xl font-light max-w-3xl mx-auto leading-relaxed mb-10">
+          סיפור חיים עוצמתי על מחלה, ניתוח, תקומה ובחירה.
+          <br className="hidden sm:block" />
+          הרצאה שמשנה פרספקטיבה, פותחת לב ומותירת רושם לכל החיים.
+        </p>
+
+        <div className="animate-fade-in-up delay-500 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a
+            href="#contact"
+            className="group bg-amber-500 hover:bg-amber-400 text-stone-900 font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 hover:shadow-2xl hover:shadow-amber-500/40 hover:-translate-y-1 w-full sm:w-auto text-center"
+          >
+            הזמן הרצאה עכשיו
+          </a>
+          <a
+            href="#videos"
+            className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold text-lg px-8 py-4 rounded-full border border-white/30 hover:border-white/50 transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto text-center"
+          >
+            צפה בהרצאה
+          </a>
+        </div>
+
+        {/* Stats */}
+        <div className="animate-fade-in-up delay-600 mt-16 grid grid-cols-3 gap-6 max-w-2xl mx-auto">
+          {[
+            { value: '500+', label: 'הרצאות בוצעו' },
+            { value: '97%', label: 'שביעות רצון' },
+            { value: '15+', label: 'שנות ניסיון' },
+          ].map((stat) => (
+            <div key={stat.label} className="text-center">
+              <div className="text-amber-400 font-black text-2xl sm:text-3xl">{stat.value}</div>
+              <div className="text-stone-300 text-xs sm:text-sm mt-1">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <a
+        href="#about"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 hover:text-amber-400 transition-colors animate-bounce"
+        aria-label="גלול למטה"
+      >
+        <ChevronDown size={32} />
+      </a>
+    </section>
+  );
+}
