@@ -46,7 +46,7 @@ export default function WhyBook() {
         <div className="mt-14 text-center">
           <a
             href="tel:0525990097"
-            className="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+            className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-white font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sky-400/50 hover:-translate-y-1"
           >
             <span>צרו קשר</span>
             <ArrowUpRight size={20} />

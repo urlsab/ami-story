@@ -6,7 +6,6 @@ import WhyBook from './components/WhyBook';
 import Videos from './components/Videos';
 import Testimonials from './components/Testimonials';
 import Gallery from './components/Gallery';
-import Podcast from './components/Podcast';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import UpcomingEvents from './components/UpcomingEvents';
@@ -22,7 +21,6 @@ function App() {
       <Videos />
       <Testimonials />
       <Gallery />
-      <Podcast />
       <UpcomingEvents />
       <CTA />
       <Footer />
