@@ -1,4 +1,4 @@
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
+﻿import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { Phone, MessageCircle } from 'lucide-react';
 
 export default function CTA() {
@@ -7,23 +7,16 @@ export default function CTA() {
   return (
     <section
       ref={ref as React.RefObject<HTMLElement>}
-      className="py-24 relative overflow-hidden"
+      className="py-24 bg-stone-950 relative overflow-hidden"
     >
-      {/* Background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            'url(https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1920)',
-        }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-stone-950/85 via-stone-900/80 to-stone-950/90" />
-      <div className="absolute inset-0 bg-gradient-to-r from-amber-900/20 to-transparent" />
+      {/* Subtle glow accents */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-600/6 rounded-full blur-2xl" />
+      </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span className="inline-block bg-amber-500/20 border border-amber-500/40 text-amber-300 text-sm font-medium px-5 py-2 rounded-full mb-6">
-          מוכנים לצעד הבא?
-        </span>
+
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white text-shadow-lg mb-6 leading-tight">
           הביאו את עמי-חי
           <span className="gradient-text block mt-1">לארגון שלכם</span>
@@ -37,7 +30,7 @@ export default function CTA() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="tel:0525990097"
-            className="flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-stone-900 font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 hover:shadow-2xl hover:shadow-amber-500/40 hover:-translate-y-1"
+            className="flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-400 text-stone-900 font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 hover:shadow-2xl hover:shadow-sky-500/40 hover:-translate-y-1"
           >
             <Phone size={20} />
             התקשרו עכשיו
@@ -53,9 +46,7 @@ export default function CTA() {
           </a>
         </div>
 
-        <p className="text-stone-400 text-sm mt-8">
-          זמינים לצוותי עבודה, מוסדות חינוך, קהילות ועוד
-        </p>
+        {/* availability text removed */}
       </div>
     </section>
   );

@@ -1,30 +1,30 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import IntroSection from './components/IntroSection';
 import About from './components/About';
 import WhyBook from './components/WhyBook';
-import TargetAudience from './components/TargetAudience';
 import Videos from './components/Videos';
 import Testimonials from './components/Testimonials';
 import Gallery from './components/Gallery';
 import Podcast from './components/Podcast';
 import CTA from './components/CTA';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import UpcomingEvents from './components/UpcomingEvents';
 
 function App() {
   return (
     <div className="min-h-screen" dir="rtl">
       <Navbar />
       <Hero />
+      <IntroSection />
       <About />
       <WhyBook />
-      <TargetAudience />
       <Videos />
       <Testimonials />
       <Gallery />
       <Podcast />
+      <UpcomingEvents />
       <CTA />
-      <Contact />
       <Footer />
     </div>
   );

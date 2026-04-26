@@ -1,4 +1,4 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -24,7 +24,7 @@
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, #d97706, #f59e0b);
+    background: linear-gradient(135deg, #0ea5e9, #38bdf8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -78,6 +78,33 @@
   transform: translateY(0);
 }
 
+/* Bidirectional scroll fade – fades in when entering, out when leaving */
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.scroll-fade.scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-fade-delay {
+  transition-delay: 280ms;
+}
+
+.scroll-fade-slow {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 1.3s ease, transform 1.3s ease;
+}
+
+.scroll-fade-slow.scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -85,7 +112,7 @@
   background: #fafaf9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #d97706;
+  background: #0ea5e9;
   border-radius: 4px;
 }
 

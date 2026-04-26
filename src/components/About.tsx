@@ -1,23 +1,5 @@
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import { Heart, Lightbulb, Star } from 'lucide-react';
-
-const highlights = [
-  {
-    icon: Heart,
-    title: 'מסע אמיתי',
-    desc: 'סיפור חיים אמיתי של התמודדות עם מחלה קשה ואירוע רפואי משמעותי',
-  },
-  {
-    icon: Lightbulb,
-    title: 'תובנות עמוקות',
-    desc: 'תובנות על חיים, בחירות, פרספקטיבה והכוח שיש בנו לשנות כיוון',
-  },
-  {
-    icon: Star,
-    title: 'השראה לפעולה',
-    desc: 'הרצאה שמותירת אנשים עם כלים ומוטיבציה לשנות את חייהם',
-  },
-];
+﻿import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import aboutImg from '../Assets/tell 2.jpg';
 
 export default function About() {
   const ref = useScrollAnimation();
@@ -26,7 +8,7 @@ export default function About() {
     <section
       id="about"
       ref={ref as React.RefObject<HTMLElement>}
-      className="py-24 bg-white"
+      className="py-24 bg-sky-900"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -34,58 +16,36 @@ export default function About() {
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/3321796/pexels-photo-3321796.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={aboutImg}
                 alt="עמי-חי מרצה"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-[500px] object-cover object-top"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-stone-900/50 to-transparent" />
-              <div className="absolute bottom-6 right-6 left-6">
-                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-5 py-4 text-white text-center">
-                  <p className="text-lg font-bold">"כל בחירה מעצבת מציאות"</p>
-                </div>
-              </div>
             </div>
             {/* Decorative accent */}
-            <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-amber-100 rounded-2xl -z-10" />
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-amber-50 rounded-2xl -z-10" />
+            <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-sky-800/40 rounded-2xl -z-10" />
+            <div className="absolute -top-6 -right-6 w-32 h-32 bg-sky-800/30 rounded-2xl -z-10" />
           </div>
 
           {/* Text */}
           <div className="order-1 lg:order-2">
-            <span className="text-amber-600 font-semibold text-sm uppercase tracking-widest">
-              אודות עמי-חי
-            </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-stone-900 mt-3 mb-6 leading-tight">
-              סיפור שמשנה{' '}
-              <span className="gradient-text">את כל מה שחשבת שאתה יודע</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mt-3 mb-6 leading-tight">
+              הבחירה
             </h2>
-            <div className="space-y-4 text-stone-600 text-lg leading-relaxed">
+            <div className="space-y-6 text-sky-100 text-lg leading-relaxed">
               <p>
-                עמי-חי הוא איש פשוט שעבר מסע יוצא דופן. מחלה קשה, ניתוח גדול, ורגעים שבהם כל מה שנשאר הוא הבחירה – איך מתמודדים, מה מרגישים, ואיפה מוצאים את הכוח להמשיך.
+                אירועים כאלה מטלטלים את כל העולמות של האדם. העולם הפנימי, האישי, המשפחתי, הכלכלי. ואני מוצא את עצמי בצומת דרכים שאני לא ממש מכיר. אני מוצא את עצמי, האדם העוצמתי שקיבל החלטות בשביל לא מעט אנשים – ללא עצמאות בסיסית ובתלות כמעט מוחלטת בסובבים אותו. אני נמצא בבת אחת במקום מאוד נמוך שעלול להוביל ח"ו למקומות חשוכים. לשמחתי קיבלתי החלטה מודעת לבחור בדרך החיים ובמקום לשאול למה אני מחליט לשאול למה. היה לי ברור שיש כאן מסר. אפשרות להבין. אפשרות לתקן. הזדמנות לשנות ולהשתנות.
               </p>
-              <p>
-                מאותם רגעים קריטיים צמחו תובנות שמשנות חיים – על מה שחשוב באמת, על הכוח שיש בנו, ועל היכולת של כל אחד לבחור את הסיפור שהוא מספר לעצמו.
-              </p>
-              <p className="font-medium text-stone-800">
-                כיום עמי-חי מביא את הסיפור הזה לקהלים ברחבי הארץ – ומשאיר כל מי שנוכח עם משהו שלא ישכח.
-              </p>
+              <div>
+                <p className="font-bold text-white text-xl mb-2">המסר</p>
+                <p>
+                  בשיחה פתוחה מלב אל לב אני פורס בפניכם סיפור אישי ללא מסיכות הנוגע בכל פינה בחיים של כל אחד מאיתנו, ועל הכוחות שנותנים לנו את היכולת לראות את ההזדמנות שיש בקשיים המונחים לפתחינו — אמונה, משפחה, קהילה, ערכים וכלים שרכשנו במשך השנים.
+                </p>
+              </div>
             </div>
 
-            {/* Highlights */}
-            <div className="mt-10 space-y-4">
-              {highlights.map(({ icon: Icon, title, desc }) => (
-                <div key={title} className="flex gap-4 items-start group">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-50 group-hover:bg-amber-100 flex items-center justify-center transition-colors">
-                    <Icon className="text-amber-600" size={22} />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-stone-900 text-base">{title}</h3>
-                    <p className="text-stone-500 text-sm mt-0.5">{desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            {/* Highlights removed */}
           </div>
         </div>
       </div>

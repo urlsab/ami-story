@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
+import logoImg from '../Assets/logo_ami-removebg-preview.png';
 
 const navLinks = [
   { label: 'אודות', href: '#about' },
@@ -23,15 +24,18 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-stone-900/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        scrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-white'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <a href="#hero" className="flex flex-col leading-tight">
-            <span className="text-amber-400 font-bold text-xl tracking-wide">עמי-חי</span>
-            <span className="text-stone-300 text-xs font-light">סיפורה של בחירה</span>
+          {/* Logo – pinned right (RTL first child), responsive size */}
+          <a href="#hero" className="flex items-center flex-shrink-0 order-first">
+            <img
+              src={logoImg}
+              alt="עמי-חי"
+              className="h-36 sm:h-40 md:h-60 lg:h-70 w-auto object-contain -my-26 sm:-my-10 md:-my-20 lg:-my-24"
+            />
           </a>
 
           {/* Desktop Nav */}
@@ -40,7 +44,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-stone-200 hover:text-amber-400 text-sm font-medium transition-colors duration-200"
+                className="text-stone-700 hover:text-sky-500 text-sm font-medium transition-colors duration-200"
               >
                 {link.label}
               </a>
@@ -51,13 +55,13 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <a
               href="tel:0525990097"
-              className="hidden sm:flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-stone-900 font-bold text-sm px-4 py-2 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-amber-500/25"
+              className="hidden sm:flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-stone-900 font-bold text-sm px-4 py-2 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-sky-500/25"
             >
               <Phone size={15} />
               <span>הזמן הרצאה</span>
             </a>
             <button
-              className="md:hidden text-white p-1"
+              className="md:hidden text-stone-800 p-1"
               onClick={() => setOpen(!open)}
               aria-label="תפריט"
             >
@@ -73,20 +77,20 @@ export default function Navbar() {
           open ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-stone-900/98 backdrop-blur-md px-4 pb-6 pt-2 space-y-1">
+        <div className="bg-white px-4 pb-6 pt-2 space-y-1 shadow-lg">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="block py-3 text-stone-200 hover:text-amber-400 font-medium border-b border-stone-800 transition-colors"
+              className="block py-3 text-stone-900 hover:text-sky-500 font-medium border-b border-stone-200 transition-colors"
             >
               {link.label}
             </a>
           ))}
           <a
             href="tel:0525990097"
-            className="flex items-center justify-center gap-2 mt-4 bg-amber-500 text-stone-900 font-bold py-3 rounded-full"
+            className="flex items-center justify-center gap-2 mt-4 bg-sky-500 text-stone-900 font-bold py-3 rounded-full"
           >
             <Phone size={16} />
             <span>הזמן הרצאה עכשיו</span>

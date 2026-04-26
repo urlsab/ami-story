@@ -1,4 +1,4 @@
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
+﻿import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { Building2, GraduationCap, Users as Users2, BookOpen, Baby, Shield, Heart } from 'lucide-react';
 
 const audiences = [
@@ -23,7 +23,7 @@ export default function TargetAudience() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-amber-400 font-semibold text-sm uppercase tracking-widest">
+          <span className="text-sky-400 font-semibold text-sm uppercase tracking-widest">
             הקהל המתאים
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mt-3 mb-4">
@@ -40,10 +40,10 @@ export default function TargetAudience() {
           {audiences.map(({ icon: Icon, label, desc }) => (
             <div
               key={label}
-              className="group bg-stone-800/60 hover:bg-amber-500 border border-stone-700/50 hover:border-amber-400 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-500/20 cursor-default"
+              className="group bg-stone-800/60 hover:bg-sky-500 border border-stone-700/50 hover:border-sky-400 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-500/20 cursor-default"
             >
-              <div className="w-12 h-12 rounded-xl bg-amber-500/15 group-hover:bg-white/20 flex items-center justify-center mb-4 transition-colors">
-                <Icon className="text-amber-400 group-hover:text-white" size={24} />
+              <div className="w-12 h-12 rounded-xl bg-sky-500/15 group-hover:bg-white/20 flex items-center justify-center mb-4 transition-colors">
+                <Icon className="text-sky-400 group-hover:text-white" size={24} />
               </div>
               <h3 className="font-bold text-white text-base mb-1 group-hover:text-white">{label}</h3>
               <p className="text-stone-400 group-hover:text-white/80 text-sm transition-colors">{desc}</p>
@@ -51,12 +51,12 @@ export default function TargetAudience() {
           ))}
 
           {/* Extra card - custom */}
-          <div className="group bg-amber-500/10 border-2 border-dashed border-amber-500/40 hover:border-amber-400 rounded-2xl p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1">
-            <p className="text-amber-400 font-semibold text-base mb-2">לא בטוח שזה מתאים?</p>
+          <div className="group bg-sky-500/10 border-2 border-dashed border-sky-500/40 hover:border-sky-400 rounded-2xl p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1">
+            <p className="text-sky-400 font-semibold text-base mb-2">לא בטוח שזה מתאים?</p>
             <p className="text-stone-400 text-sm mb-4">צור קשר ונמצא יחד את הפורמט המושלם</p>
             <a
               href="#contact"
-              className="bg-amber-500 hover:bg-amber-400 text-stone-900 font-bold text-sm px-5 py-2 rounded-full transition-colors"
+              className="bg-sky-500 hover:bg-sky-400 text-stone-900 font-bold text-sm px-5 py-2 rounded-full transition-colors"
             >
               דבר איתנו
             </a>
