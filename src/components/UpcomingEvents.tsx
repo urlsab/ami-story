@@ -145,7 +145,7 @@ export default function UpcomingEvents() {
         {/* CTA */}
         <div ref={ctaRef} className="scroll-fade text-center">
           <a
-            href="#contact"
+            href="tel:0525990097"
             className="inline-block bg-sky-500 hover:bg-sky-400 text-stone-900 font-bold text-base px-10 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/30 hover:-translate-y-0.5"
           >
             הזמינו הרצאה לאירוע שלכם

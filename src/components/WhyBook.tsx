@@ -27,7 +27,7 @@ export default function WhyBook() {
           {/* Target audience */}
           <div className="mt-12 text-center">
             <p className="text-white font-bold text-xl mb-6">
-              השיחה מתאימה למגוון קהלים —
+              השיחה מתאימה למגוון קהלים
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {['צוותי עבודה', 'צוותי חינוך', 'קהילות', 'סטודנטים', 'הורים', 'מכינות קדם-צבאיות'].map((item) => (
@@ -45,7 +45,7 @@ export default function WhyBook() {
         {/* Bottom CTA */}
         <div className="mt-14 text-center">
           <a
-            href="#contact"
+            href="tel:0525990097"
             className="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
           >
             <span>צרו קשר</span>
