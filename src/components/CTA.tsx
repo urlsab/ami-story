@@ -6,6 +6,7 @@ export default function CTA() {
 
   return (
     <section
+      id="cta"
       ref={ref as React.RefObject<HTMLElement>}
       className="py-24 bg-stone-950 relative overflow-hidden"
     >

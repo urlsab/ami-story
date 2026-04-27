@@ -1,5 +1,5 @@
-﻿import { useState } from 'react';
-import { Phone, Mail, MessageCircle, Heart, X } from 'lucide-react';
+import { useState } from 'react';
+import { Phone, Mail, MessageCircle, X } from 'lucide-react';
 import catappLogo from '../Assets/catapp-logo.png';
 
 function InstagramIcon({ size = 16 }: { size?: number }) {
@@ -128,7 +128,7 @@ export default function Footer() {
                 <li key={href}>
                   <a
                     href={href}
-                    className="text-white hover:text-black text-sm transition-colors"
+                    className="text-white hover:text-yellow-500 text-sm transition-colors"
                   >
                     {label}
                   </a>
@@ -147,7 +147,7 @@ export default function Footer() {
                 'קהילות',
                 'סטודנטים',
                 'הורים',
-                'מכינות וישיבות',
+                'מכינות קדם-צבאיות',
               ].map((item) => (
                 <li key={item}>
                   <span className="text-white text-sm">{item}</span>
@@ -163,7 +163,7 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:0525990097"
-                  className="flex items-center gap-3 text-white hover:text-black text-sm transition-colors group"
+                  className="flex items-center gap-3 text-white hover:text-yellow-500 text-sm transition-colors group"
                 >
                   <Phone size={15} className="text-white flex-shrink-0" />
                   052-5990097
@@ -172,7 +172,7 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:0545637128"
-                  className="flex items-center gap-3 text-white hover:text-black text-sm transition-colors group"
+                  className="flex items-center gap-3 text-white hover:text-yellow-500 text-sm transition-colors group"
                 >
                   <Phone size={15} className="text-white flex-shrink-0" />
                   054-5637128
@@ -181,7 +181,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:amka68@gmail.com"
-                  className="flex items-center gap-3 text-white hover:text-black text-sm transition-colors group"
+                  className="flex items-center gap-3 text-white hover:text-yellow-500 text-sm transition-colors group"
                 >
                   <Mail size={15} className="text-white flex-shrink-0" />
                   amka68@gmail.com
@@ -203,21 +203,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="py-6 flex flex-col items-center gap-4">
-          <div className="flex gap-6">
-            <button
-              onClick={() => setActiveModal('terms')}
-              className="text-white hover:text-black text-sm transition-colors"
-            >
-              תנאי שימוש
-            </button>
-            <button
-              onClick={() => setActiveModal('privacy')}
-              className="text-white hover:text-black text-sm transition-colors"
-            >
-              מדיניות פרטיות
-            </button>
-          </div>
+        <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sky-100 text-sm flex items-center gap-2">
             © {year} עמי-חי. כל הזכויות שמורות. נבנה ע"י{' '}
             <a
@@ -229,6 +215,20 @@ export default function Footer() {
               <img src={catappLogo} alt="catapp" className="h-5 w-auto" />
             </a>
           </p>
+          <div className="flex gap-6">
+            <button
+              onClick={() => setActiveModal('terms')}
+              className="text-white hover:text-yellow-500 text-sm transition-colors"
+            >
+              תנאי שימוש
+            </button>
+            <button
+              onClick={() => setActiveModal('privacy')}
+              className="text-white hover:text-yellow-500 text-sm transition-colors"
+            >
+              מדיניות פרטיות
+            </button>
+          </div>
         </div>
       </div>
 

@@ -3,12 +3,12 @@ import { Menu, X, Phone } from 'lucide-react';
 import logoImg from '../Assets/logo_ami-removebg-preview.png';
 
 const navLinks = [
-  { label: 'אודות', href: '#about' },
+  { label: 'אודות', href: '#intro' },
   { label: 'למה להזמין', href: '#why' },
-  { label: 'הרצאות', href: '#videos' },
+  { label: 'הפודקאסט', href: '#videos' },
   { label: 'המלצות', href: '#testimonials' },
   { label: 'גלריה', href: '#gallery' },
-  { label: 'יצירת קשר', href: '#contact' },
+  { label: 'יצירת קשר', href: '#cta' },
 ];
 
 export default function Navbar() {

@@ -6,31 +6,31 @@ const testimonials = [
   {
     quote: 'הסיפור שלו נותן המון פרספקטיבה על מה שחשוב באמת בחיים',
     author: 'אסתי בוקובסקי',
-    role: 'מנהלת מרכז קהילתי',
+    role: 'משתתף מההרצאה',
     featured: true,
   },
   {
     quote: 'הסיפור של עמי היה מעורר השראה ופתח לב',
-    author: 'משתתף מהרצאה',
-    role: 'צוות עובדים',
+    author: 'משתתף מההרצאה',
+    role: 'משתתף מההרצאה',
     featured: false,
   },
   {
     quote: 'אדם מעורר השראה באמת',
-    author: 'משתתפת',
-    role: 'קהל הרצאה',
+    author: 'משתתף מההרצאה',
+    role: 'משתתף מההרצאה',
     featured: false,
   },
   {
     quote: 'הרצאה מרתקת ומעוררת השראה',
-    author: 'מנהל מוסד חינוכי',
-    role: 'מוסד חינוכי',
+    author: 'משתתף מההרצאה',
+    role: 'משתתף מההרצאה',
     featured: false,
   },
   {
     quote: 'עמי הוא מרצה נעים, קשוב ואדיב שמתחבר לכולם',
-    author: 'מנהלת בית ספר',
-    role: 'צוות מחנכים',
+    author: 'משתתף מההרצאה',
+    role: 'משתתף מההרצאה',
     featured: false,
   },
 ];
@@ -62,7 +62,7 @@ export default function Testimonials() {
           .map((t) => (
             <div
               key={t.author}
-              className="relative bg-stone-900 text-white rounded-3xl p-10 mb-8 max-w-4xl mx-auto shadow-2xl overflow-hidden"
+              className="relative bg-stone-900 text-white rounded-3xl p-10 mb-8 max-w-4xl mx-auto shadow-2xl overflow-hidden border-2 border-sky-500"
             >
               <div className="absolute top-0 left-0 w-64 h-64 bg-sky-500/10 rounded-full -translate-x-1/3 -translate-y-1/3" />
               <div className="relative z-10 flex flex-col items-center text-center">
@@ -95,7 +95,7 @@ export default function Testimonials() {
             .map((t) => (
               <div
                 key={t.quote}
-                className="bg-stone-800 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-stone-700"
+                className="bg-stone-800 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-2 border-sky-500"
               >
                 <Quote className="text-sky-300 mb-3" size={28} />
                 <p className="text-stone-200 leading-relaxed text-base mb-5 font-medium">

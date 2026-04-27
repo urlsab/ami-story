@@ -12,8 +12,8 @@ export default function WhyBook() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mt-3 mb-6">
+        <div className="text-center mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mt-3 mb-4">
             אופי <span className="gradient-text">השיחה</span>
           </h2>
         </div>
