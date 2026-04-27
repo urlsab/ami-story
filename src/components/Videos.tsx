@@ -26,12 +26,8 @@ export default function Videos() {
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mt-3 mb-4">
-            תנו לסיפור{' '}
-            <span className="gradient-text">לדבר</span>
+            הפודקאסט - <span className="gradient-text">חלק 2</span>
           </h2>
-          <p className="text-sky-100 text-lg max-w-2xl mx-auto">
-            כמה דקות שמשנות הכל. צפו בהרצאה וחוו בעצמכם את העוצמה
-          </p>
         </div>
 
         {/* Main video */}

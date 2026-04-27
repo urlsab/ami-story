@@ -203,18 +203,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sky-100 text-sm flex items-center gap-2">
-            © {year} עמי-חי. כל הזכויות שמורות. נבנה ע"י{' '}
-            <a
-              href="https://catapp.it.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center hover:opacity-80 transition-opacity"
-            >
-              <img src={catappLogo} alt="catapp" className="h-5 w-auto" />
-            </a>
-          </p>
+        <div className="py-6 flex flex-col items-center gap-4">
           <div className="flex gap-6">
             <button
               onClick={() => setActiveModal('terms')}
@@ -229,6 +218,17 @@ export default function Footer() {
               מדיניות פרטיות
             </button>
           </div>
+          <p className="text-sky-100 text-sm flex items-center gap-2">
+            © {year} עמי-חי. כל הזכויות שמורות. נבנה ע"י{' '}
+            <a
+              href="https://catapp.it.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center hover:opacity-80 transition-opacity"
+            >
+              <img src={catappLogo} alt="catapp" className="h-5 w-auto" />
+            </a>
+          </p>
         </div>
       </div>
 

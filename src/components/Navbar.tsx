@@ -30,7 +30,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo – pinned right (RTL first child), responsive size */}
-          <a href="#hero" className="flex items-center flex-shrink-0 order-first">
+          <a href="#hero" className="flex items-center flex-shrink-0 order-first -mr-12 sm:-mr-16 lg:-mr-20">
             <img
               src={logoImg}
               alt="עמי-חי"

@@ -44,7 +44,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold text-lg px-8 py-4 rounded-full border border-white/30 hover:border-white/50 transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto text-center"
           >
-            צפה בהרצאה
+            לצפייה בפודקאסט - חלק 1
           </a>
         </div>
       </div>
