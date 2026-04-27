@@ -30,7 +30,7 @@ export default function WhyBook() {
               השיחה מתאימה למגוון קהלים
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {['צוותי עבודה', 'צוותי חינוך', 'קהילות', 'סטודנטים', 'הורים', 'מכינות קדם-צבאיות'].map((item) => (
+              {['צוותי עבודה', 'צוותי חינוך', 'קהילות', 'סטודנטים', 'הורים', 'מכינות וישיבות'].map((item) => (
                 <span
                   key={item}
                   className="bg-stone-800 border border-stone-700 text-sky-300 font-medium text-base px-5 py-2 rounded-full"

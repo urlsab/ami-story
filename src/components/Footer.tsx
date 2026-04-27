@@ -147,7 +147,7 @@ export default function Footer() {
                 'קהילות',
                 'סטודנטים',
                 'הורים',
-                'מכינות קדם-צבאיות',
+                'מכינות וישיבות',
               ].map((item) => (
                 <li key={item}>
                   <span className="text-white text-sm">{item}</span>
