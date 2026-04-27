@@ -32,13 +32,13 @@ export default function IntroSection() {
           <div ref={imgRef} className="scroll-fade flex-shrink-0 w-48 sm:w-64 md:w-72">
             <img
               src={amiImg}
-              alt="עמי קרווני"
+              alt="עמי קרואני"
               className="w-full h-auto object-contain drop-shadow-2xl"
             />
           </div>
           <div ref={headerRef} className="scroll-fade scroll-fade-delay text-center sm:text-right">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mt-3 mb-4 leading-tight">
-              קוראים לי <span className="text-sky-400">עמי קרווני</span>
+              קוראים לי <span className="text-sky-400">עמי קרואני</span>
             </h2>
             <p className="text-stone-300 text-xl leading-relaxed max-w-lg mb-4">
               ויש לי סיפור משנה חיים לספר לכם
