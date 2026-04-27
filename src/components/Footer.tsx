@@ -87,16 +87,16 @@ export default function Footer() {
                 href="https://wa.me/9720525990097"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-sky-800 hover:bg-green-600 flex items-center justify-center transition-colors group"
+                className="w-9 h-9 rounded-lg bg-sky-800 hover:bg-green-600 flex items-center justify-center transition-colors group border border-yellow-500"
                 aria-label="WhatsApp"
               >
-                <MessageCircle className="text-stone-400 group-hover:text-white" size={16} />
+                <MessageCircle className="text-'white group-hover:text-white" size={16} />
               </a>
               <a
                 href="https://www.youtube.com/@%D7%A2%D7%9E%D7%A0%D7%95%D7%90%D7%9C%D7%A7%D7%A8%D7%95%D7%90%D7%A0%D7%99"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-sky-800 hover:bg-red-600 flex items-center justify-center transition-colors group"
+                className="w-9 h-9 rounded-lg bg-sky-800 hover:bg-red-600 flex items-center justify-center transition-colors group border border-yellow-500"
                 aria-label="YouTube"
               >
                 <YoutubeIcon size={16} />
@@ -105,7 +105,7 @@ export default function Footer() {
                 href="https://www.instagram.com/ami_karavani?igsh=bDNyeTJ0NnBxamk1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-sky-800 hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-500 flex items-center justify-center transition-colors group"
+                className="w-9 h-9 rounded-lg bg-sky-800 hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-500 flex items-center justify-center transition-colors group border border-yellow-500"
                 aria-label="Instagram"
               >
                 <InstagramIcon size={16} />
@@ -118,9 +118,9 @@ export default function Footer() {
             <h4 className="text-white font-bold text-base mb-5">ניווט מהיר</h4>
             <ul className="space-y-3">
               {[
-                ['#about', 'אודות עמי-חי'],
+                ['#about', 'אודות'],
                 ['#why', 'למה להזמין'],
-                ['#videos', 'הרצאות ורילס'],
+                ['#videos', 'הפודקאסט'],
                 ['#testimonials', 'המלצות'],
                 ['#gallery', 'גלריה'],
                 ['#contact', 'יצירת קשר'],
@@ -147,7 +147,7 @@ export default function Footer() {
                 'קהילות',
                 'סטודנטים',
                 'הורים',
-                'מכינות קדם-צבאיות',
+                'מכינות וישיבות',
               ].map((item) => (
                 <li key={item}>
                   <span className="text-white text-sm">{item}</span>
