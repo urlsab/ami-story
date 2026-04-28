@@ -12,25 +12,25 @@ const testimonials = [
   {
     quote: 'הסיפור של עמי היה מעורר השראה ופתח לב',
     author: 'משתתף מההרצאה',
-    role: 'משתתף מההרצאה',
+    
     featured: false,
   },
   {
     quote: 'אדם מעורר השראה באמת',
     author: 'משתתף מההרצאה',
-    role: 'משתתף מההרצאה',
+    
     featured: false,
   },
   {
     quote: 'הרצאה מרתקת ומעוררת השראה',
     author: 'משתתף מההרצאה',
-    role: 'משתתף מההרצאה',
+    
     featured: false,
   },
   {
     quote: 'עמי הוא מרצה נעים, קשוב ואדיב שמתחבר לכולם',
     author: 'משתתף מההרצאה',
-    role: 'משתתף מההרצאה',
+    
     featured: false,
   },
 ];

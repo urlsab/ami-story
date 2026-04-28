@@ -73,9 +73,10 @@ export default function Footer() {
     <footer className="bg-sky-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main footer */}
-        <div className="py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 border-b border-sky-700">
+        <div className="py-14 border-b border-sky-700">
+          <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 sm:gap-10">
           {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-1">
+          <div className="col-span-3 sm:col-span-1 mb-4 sm:mb-0">
             <div className="mb-5">
               <p className="text-white font-black text-2xl">עמי-חי</p>
             </div>
@@ -200,6 +201,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          </div>{/* end main grid */}
         </div>
 
         {/* Bottom */}

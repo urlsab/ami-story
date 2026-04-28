@@ -7,10 +7,14 @@
     font-family: 'Heebo', sans-serif;
     direction: rtl;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   body {
     font-family: 'Heebo', sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 }
 

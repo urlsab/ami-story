@@ -12,7 +12,7 @@ import UpcomingEvents from './components/UpcomingEvents';
 
 function App() {
   return (
-    <div className="min-h-screen" dir="rtl">
+    <div className="min-h-screen overflow-x-hidden w-full" dir="rtl">
       <Navbar />
       <Hero />
       <IntroSection />
