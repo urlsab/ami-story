@@ -247,7 +247,7 @@ export default function Footer() {
             onClick={() => setActiveModal(null)}
           />
           {/* Panel */}
-          <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[80vh] flex flex-col z-10">
+          <div className="relative bg-white rounded-2xl rounded-bl-none shadow-2xl w-full max-w-lg max-h-[80vh] flex flex-col z-10">
             <div className="flex items-center justify-between px-6 py-4 border-b border-stone-100">
               <h2 className="text-lg font-black text-stone-900">
                 {MODAL_CONTENT[activeModal].title}
