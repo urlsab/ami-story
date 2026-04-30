@@ -27,9 +27,6 @@ export default function Gallery() {
             רגעים מן{' '}
             <span className="gradient-text">המפגשים</span>
           </h2>
-          <p className="text-sky-100 text-lg max-w-2xl mx-auto">
-            תמונות מהרצאות, מקהלים שנגעו ורגעים שנחרטו בזיכרון
-          </p>
         </div>
 
         {/* 2-column responsive grid – natural aspect ratio preserved */}

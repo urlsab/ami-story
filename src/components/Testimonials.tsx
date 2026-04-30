@@ -50,21 +50,18 @@ export default function Testimonials() {
     <section
       id="testimonials"
       ref={ref as React.RefObject<HTMLElement>}
-      className="py-24 bg-stone-900"
+      className="py-4 bg-stone-900"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14">
-          <div className="flex items-center justify-center gap-1 mt-3 mb-4">
-            <img src={logoImg} alt="לוגו עמי-חי" className="h-48 sm:h-60 md:h-72 w-auto brightness-0 invert p-0 -mr-6 sm:-mr-18 md:-mr-22" />
+          <div className="flex items-center justify-center gap-1 mt-0 mb-0">
+            <img src={logoImg} alt="לוגו עמי-חי" className="h-48 sm:h-60 md:h-72 w-auto brightness-0 invert p-0 -mt-16 sm:-mt-20 md:-mt-24 -mb-16 sm:-mb-20 md:-mb-24 -mr-6 sm:-mr-18 md:-mr-22" />
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white">
               המלצות שמדברות{' '}
               <span className="gradient-text">בעצמן</span>
             </h2>
           </div>
-          <p className="text-stone-400 text-lg max-w-2xl mx-auto">
-            מאות אנשים שחוו את ההרצאה ומשתפים בחוויה שלהם
-          </p>
         </div>
 
         {/* Featured testimonial */}

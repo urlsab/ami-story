@@ -45,7 +45,7 @@ export default function UpcomingEvents() {
   }, []);
 
   return (
-    <section id="events" className="relative py-28 bg-sky-900 overflow-hidden">
+    <section id="events" className="relative py-4 bg-sky-900 overflow-hidden">
       {/* Atmospheric background glows */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-sky-500/5 rounded-full blur-3xl" />
@@ -56,10 +56,10 @@ export default function UpcomingEvents() {
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div ref={headerRef} className="scroll-fade text-center mb-16">
+        <div ref={headerRef} className="scroll-fade text-center mb-0">
 
-          <div className="flex items-center justify-center gap-1 mt-4 mb-5">
-            <img src={logoImg} alt="לוגו עמי-חי" className="h-60 sm:h-72 md:h-80 w-auto brightness-0 invert p-0 -mr-18 sm:-mr-22 md:-mr-28" />
+          <div className="flex items-center justify-center gap-1 mt-0 mb-0">
+            <img src={logoImg} alt="לוגו עמי-חי" className="h-60 sm:h-72 md:h-80 w-auto brightness-0 invert p-0 -mt-16 sm:-mt-20 md:-mt-24 -mb-16 sm:-mb-20 md:-mb-24 -mr-18 sm:-mr-22 md:-mr-28" />
             <h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-white leading-tight">
               אירועים <span className="text-sky-400">עתידיים</span>
             </h2>
