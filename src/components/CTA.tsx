@@ -16,7 +16,7 @@ export default function CTA() {
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-600/6 rounded-full blur-2xl" />
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-4">
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white text-shadow-lg mb-6 leading-tight">
           הביאו את עמי-חי
