@@ -8,7 +8,7 @@ export default function CTA() {
     <section
       id="cta"
       ref={ref as React.RefObject<HTMLElement>}
-      className="py-14 bg-stone-950 relative overflow-hidden"
+      className="py-14 bg-stone-950 relative overflow-hidden scroll-mt-20"
     >
       {/* Subtle glow accents */}
       <div className="absolute inset-0 pointer-events-none">
