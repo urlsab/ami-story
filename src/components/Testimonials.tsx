@@ -1,12 +1,20 @@
 ﻿import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { Quote } from 'lucide-react';
 import estiImg from '../Assets/esti recommand.jpg';
+import logoImg from '../Assets/logo_ami-removebg-preview.png';
+import tomerImg from '../Assets/tomer recommand.jpg';
 
 const testimonials = [
   {
     quote: 'הסיפור שלו נותן המון פרספקטיבה על מה שחשוב באמת בחיים',
     author: 'אסתי בוקובסקי',
     role: 'מנהלת מרכז קהילתי קדומים',
+    featured: true,
+  },
+  {
+    quote: 'הדמעות שנצצו בעיני רבים מאיתנו העידו על העוצמה הרגשית שהצלחת להעביר, והשקט המוחלט ששרר באולם שיקף את ההקשבה העמוקה והחיבור המיוחד שנוצר.',
+    author: 'תומר רבי',
+    role: 'מנהל בית חינוך בני חיל',
     featured: true,
   },
   {
@@ -47,10 +55,13 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mt-3 mb-4">
-            המלצות שמדברות{' '}
-            <span className="gradient-text">בעצמן</span>
-          </h2>
+          <div className="flex items-center justify-center gap-1 mt-3 mb-4">
+            <img src={logoImg} alt="לוגו עמי-חי" className="h-48 sm:h-60 md:h-72 w-auto brightness-0 invert p-0 -mr-6 sm:-mr-18 md:-mr-22" />
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white">
+              המלצות שמדברות{' '}
+              <span className="gradient-text">בעצמן</span>
+            </h2>
+          </div>
           <p className="text-stone-400 text-lg max-w-2xl mx-auto">
             מאות אנשים שחוו את ההרצאה ומשתפים בחוויה שלהם
           </p>
@@ -78,12 +89,18 @@ export default function Testimonials() {
             </div>
           ))}
 
-        {/* Esti recommendation image */}
-        <div className="flex justify-center mb-8">
+        {/* Recommendation images */}
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-8">
           <img
             src={estiImg}
             alt="המלצה של אסתי בוקובסקי"
-            className="rounded-2xl shadow-xl max-w-sm w-full"
+            className="rounded-2xl shadow-xl max-w-sm w-full mx-auto"
+            loading="lazy"
+          />
+          <img
+            src={tomerImg}
+            alt="המלצה של תומר רבי"
+            className="rounded-2xl shadow-xl max-w-sm w-full mx-auto"
             loading="lazy"
           />
         </div>

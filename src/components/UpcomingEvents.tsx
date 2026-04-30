@@ -1,5 +1,6 @@
 ﻿import { useEffect, useRef } from 'react';
 import { Calendar, Star, Moon } from 'lucide-react';
+import logoImg from '../Assets/logo_ami-removebg-preview.png';
 
 const elulText = `לקראת חודש אלול, אנו מציעים לכם שיחת
 התעוררות מיוחדת במינה, המעוררת את הלב,
@@ -57,9 +58,12 @@ export default function UpcomingEvents() {
         {/* Header */}
         <div ref={headerRef} className="scroll-fade text-center mb-16">
 
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-white mt-4 mb-5 leading-tight">
-            אירועים <span className="text-sky-400">עתידיים</span>
-          </h2>
+          <div className="flex items-center justify-center gap-1 mt-4 mb-5">
+            <img src={logoImg} alt="לוגו עמי-חי" className="h-60 sm:h-72 md:h-80 w-auto brightness-0 invert p-0 -mr-18 sm:-mr-22 md:-mr-28" />
+            <h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-white leading-tight">
+              אירועים <span className="text-sky-400">עתידיים</span>
+            </h2>
+          </div>
 
         </div>
 

@@ -1,5 +1,6 @@
 ﻿
 import heroImg from '../Assets/tell 1.jpg';
+import logoImg from '../Assets/logo_ami-removebg-preview.png';
 
 export default function Hero() {
   return (
@@ -20,12 +21,15 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-8 max-w-5xl mx-auto">
-        <h1 className="animate-fade-in-up delay-100 text-shadow-lg text-white font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6">
-          <span className="block">עמי-חי</span>
-          <span className="gradient-text block mt-1">סיפורה של בחירה</span>
-        </h1>
+        <div className="animate-fade-in-up delay-100 mb-0 p-0 m-0 flex justify-center">
+          <img
+            src={logoImg}
+            alt="עמי-חי - סיפורה של בחירה"
+            className="h-56 sm:h-64 md:h-80 lg:h-96 w-auto drop-shadow-2xl brightness-0 invert p-0 m-0"
+          />
+        </div>
 
-        <p className="animate-fade-in-up delay-300 text-shadow text-stone-200 text-lg sm:text-xl md:text-2xl font-light max-w-3xl mx-auto leading-relaxed mb-10">
+        <p className="animate-fade-in-up delay-300 -mt-10 sm:-mt-16 md:-mt-24 lg:-mt-32 text-shadow text-stone-200 text-lg sm:text-xl md:text-2xl font-light max-w-3xl mx-auto leading-relaxed mb-10">
           סיפור חיים עוצמתי על מחלה, ניתוח, תקומה ובחירה.
           <br className="hidden sm:block" />
           הרצאה שמשנה פרספקטיבה, פותחת לב ומותירת רושם לכל החיים.

@@ -17,7 +17,7 @@ export default function Videos() {
     <section
       id="videos"
       ref={ref as React.RefObject<HTMLElement>}
-      className="py-24 relative bg-sky-900 bg-cover bg-center bg-no-repeat"
+      className="py-14 relative bg-sky-900 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('https://images.pexels.com/photos/3783471/pexels-photo-3783471.jpeg?auto=compress&cs=tinysrgb&w=1600')" }}
     >
       {/* Dark overlay */}

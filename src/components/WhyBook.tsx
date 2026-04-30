@@ -1,5 +1,6 @@
 ﻿import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { ArrowUpRight } from 'lucide-react';
+import logoImg from '../Assets/logo_ami-removebg-preview.png';
 
 export default function WhyBook() {
   const ref = useScrollAnimation();
@@ -13,9 +14,12 @@ export default function WhyBook() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mt-3 mb-4">
-            אופי <span className="gradient-text">השיחה</span>
-          </h2>
+          <div className="flex items-center justify-center gap-1 mt-3 mb-4">
+            <img src={logoImg} alt="לוגו עמי-חי" className="h-48 sm:h-60 md:h-72 w-auto brightness-0 invert p-0 -mr-14 sm:-mr-18 md:-mr-22" />
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white">
+              אופי <span className="gradient-text">השיחה</span>
+            </h2>
+          </div>
         </div>
 
         {/* Main text block */}

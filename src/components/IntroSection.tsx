@@ -24,7 +24,7 @@ export default function IntroSection() {
   }, []);
 
   return (
-    <section id="intro" className="py-20 bg-stone-900 overflow-hidden">
+    <section id="intro" className="py-12 bg-stone-900 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header row: image + title */}
