@@ -54,7 +54,7 @@ export default function Testimonials() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mt-8 mb-12">
           <div className="flex items-center justify-center gap-1 mt-0 mb-0">
             <img src={logoImg} alt="לוגו עמי-חי" className="h-48 sm:h-60 md:h-72 w-auto brightness-0 invert p-0 -mt-16 sm:-mt-20 md:-mt-24 -mb-16 sm:-mb-20 md:-mb-24 -mr-6 sm:-mr-18 md:-mr-22" />
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white">

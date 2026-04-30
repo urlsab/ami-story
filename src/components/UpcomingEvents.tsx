@@ -59,7 +59,7 @@ export default function UpcomingEvents() {
         <div ref={headerRef} className="scroll-fade text-center mb-0">
 
           <div className="flex items-center justify-center gap-1 mt-0 mb-0">
-            <img src={logoImg} alt="לוגו עמי-חי" className="h-60 sm:h-72 md:h-80 w-auto brightness-0 invert p-0 -mt-16 sm:-mt-20 md:-mt-24 -mb-16 sm:-mb-20 md:-mb-24 -mr-18 sm:-mr-22 md:-mr-28" />
+            <img src={logoImg} alt="לוגו עמי-חי" className="h-60 sm:h-72 md:h-80 w-auto brightness-0 invert p-0 -mt-16 sm:-mt-20 md:-mt-24 -mb-16 sm:-mb-20 md:-mb-24 -mr-8 sm:-mr-22 md:-mr-28" />
             <h2 className="text-3xl sm:text-6xl md:text-7xl font-black text-white leading-tight">
               אירועים <span className="text-sky-400">עתידיים</span>
             </h2>
