@@ -1,4 +1,5 @@
 ﻿import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import podcasti from '../Assets/podcasti.png';
 
 type ReelItem =
   | { type: 'reel'; code: string }
@@ -18,7 +19,7 @@ export default function Videos() {
       id="videos"
       ref={ref as React.RefObject<HTMLElement>}
       className="py-14 relative bg-sky-900 bg-cover bg-center bg-no-repeat scroll-mt-20"
-      style={{ backgroundImage: "url('https://images.pexels.com/photos/3783471/pexels-photo-3783471.jpeg?auto=compress&cs=tinysrgb&w=1600')" }}
+      style={{ backgroundImage: `url(${podcasti})` }}
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-sky-950/80" />
